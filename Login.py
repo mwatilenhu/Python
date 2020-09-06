@@ -11,6 +11,7 @@ import Welcome as welcome
 
 conn = sqlite3.connect(r'db\pythonsqlite.db')
 
+
 class Login_System:
     def __init__(self,root):
         self.root=root
@@ -74,6 +75,3 @@ class Login_System:
         self.root.withdraw()
         self.newWindow = Toplevel(self.root)
         self.app = welcome.Welcome_Window(self.newWindow)
-
-
-
